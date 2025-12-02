@@ -1,6 +1,7 @@
 dependencies {
     compileOnly(libs.polocloud.shared)
     compileOnly(libs.polocloud.proto)
+    compileOnly(libs.polocloud.agent)
 
     implementation(libs.gson)
     implementation(libs.javalin)
@@ -8,6 +9,7 @@ dependencies {
 
     implementation(libs.bundles.jwt)
     implementation(libs.argon2)
+    implementation(libs.log4j.api)
 }
 
 tasks.jar {

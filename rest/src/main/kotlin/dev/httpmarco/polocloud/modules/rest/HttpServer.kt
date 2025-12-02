@@ -4,8 +4,11 @@ import io.javalin.Javalin
 import io.javalin.community.ssl.SslPlugin
 import java.nio.file.Files
 import java.nio.file.Paths
+import org.apache.logging.log4j.LogManager
 
 class HttpServer {
+
+    private val logger = LogManager.getLogger()
 
     lateinit var app: Javalin
         private set

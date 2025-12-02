@@ -2,8 +2,6 @@ package dev.httpmarco.polocloud.modules.rest.controller.impl.v3.controller.group
 
 import com.google.gson.JsonArray
 import com.google.gson.JsonObject
-import dev.httpmarco.polocloud.agent.Agent
-import dev.httpmarco.polocloud.agent.groups.AbstractGroup
 import dev.httpmarco.polocloud.modules.rest.controller.Controller
 import dev.httpmarco.polocloud.modules.rest.controller.defaultResponse
 import dev.httpmarco.polocloud.modules.rest.controller.impl.v3.model.group.GroupCreateModel

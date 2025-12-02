@@ -9,14 +9,13 @@ import dev.httpmarco.polocloud.modules.rest.config.Users
 import dev.httpmarco.polocloud.modules.rest.controller.ControllerProvider
 import dev.httpmarco.polocloud.modules.rest.socket.web.WebSocketService
 import dev.httpmarco.polocloud.shared.module.PolocloudModule
-import dev.httpmarco.polocloud.shared.logging.Logger
-import dev.httpmarco.polocloud.shared.polocloudShared
+import org.apache.logging.log4j.LogManager
 import java.nio.file.Files
 import java.nio.file.Path
 
-val logger: Logger = polocloudShared.logger()
-val config: RestConfiguration = ConfigProvider().read("local/modules/rest/config", RestConfiguration())
-val usersConfiguration: Users = ConfigProvider().read("local/modules/rest/users", Users())
+val logger = LogManager.getLogger()
+val config = ConfigProvider().read("local/modules/rest/config", RestConfiguration())
+val usersConfiguration = ConfigProvider().read("local/modules/rest/users", Users())
 
 class RestModule : PolocloudModule {
 
