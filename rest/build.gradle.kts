@@ -4,13 +4,13 @@ dependencies {
     compileOnly(libs.polocloud.agent)
     compileOnly(libs.polocloud.common)
 
-    implementation(libs.gson)
+    compileOnly(libs.gson)
     implementation(libs.javalin)
     implementation(libs.javalin.ssl)
 
     implementation(libs.bundles.jwt)
     implementation(libs.argon2)
-    implementation(libs.log4j.api)
+    compileOnly(libs.log4j.api)
 }
 
 tasks.jar {
