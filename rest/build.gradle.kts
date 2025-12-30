@@ -2,6 +2,7 @@ dependencies {
     compileOnly(libs.polocloud.shared)
     compileOnly(libs.polocloud.proto)
     compileOnly(libs.polocloud.agent)
+    compileOnly(libs.polocloud.common)
 
     implementation(libs.gson)
     implementation(libs.javalin)

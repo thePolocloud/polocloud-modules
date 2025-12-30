@@ -75,7 +75,7 @@ class PlayerController : Controller("/player") {
                             JsonObject().apply {
                                 addProperty("name", player.name)
                                 addProperty("uuid", player.uniqueId.toString())
-                                addProperty("currentServiceName", player.currentServiceName)
+                                addProperty("currentServiceName", player.currentServerName)
                             }
                         )
                     }

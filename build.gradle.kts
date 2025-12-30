@@ -13,7 +13,7 @@ allprojects {
     apply(plugin = "com.gradleup.shadow")
 
     group = "dev.httpmarco.polocloud"
-    version = "3.0.0-pre.6.2-SNAPSHOT"
+    version = "3.0.0-pre.7-SNAPSHOT"
 
     repositories {
         mavenCentral()
