@@ -1,5 +1,3 @@
-import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
-
 polocloudModule {
     id = "rest-api-module"
     version = "3.0.0-pre.8-SNAPSHOT"
@@ -22,11 +20,4 @@ dependencies {
     implementation(libs.bundles.jwt)
     implementation(libs.argon2)
     compileOnly(libs.log4j.api)
-}
-
-tasks.named<ShadowJar>("shadowJar") {
-    dependsOn(tasks.named("buildModule"))
-
-    val jarTask = tasks.named<Jar>("jar").get()
-    from(jarTask.archiveFile.map { zipTree(it) })
 }
