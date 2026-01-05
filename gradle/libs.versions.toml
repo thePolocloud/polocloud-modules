@@ -2,9 +2,10 @@
 version = "1.0"
 
 [versions]
+kotlin = "2.3.0"
 
 # polocloud-version
-polocloud = "3.0.0-pre.7-SNAPSHOT"
+polocloud = "3.0.0-pre.8-SNAPSHOT"
 
 # libraries
 gson = "2.13.2"
@@ -40,3 +41,6 @@ argon2 = { group = "de.mkammerer", name = "argon2-jvm", version.ref = "argon2" }
 
 [bundles]
 jwt = [ "java-jwt", "javalin-jwt" ]
+
+[plugins]
+polocloud-module = { id = "dev.httpmarco.polocloud.module", version.ref = "polocloud" }

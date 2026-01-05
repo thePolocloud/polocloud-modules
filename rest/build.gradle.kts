@@ -1,6 +1,6 @@
 polocloudModule {
     id = "rest-api-module"
-    version = "3.0.0-pre.8-SNAPSHOT"
+    version = project.version.toString()
     moduleName = "REST API Module"
     description = "This module exposes a REST API by default on Port 8080"
     author = "RECHERGG"
