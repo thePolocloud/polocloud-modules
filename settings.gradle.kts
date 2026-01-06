@@ -15,3 +15,4 @@ rootProject.name = "polocloud-modules"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 include("rest")
+include("backup")
