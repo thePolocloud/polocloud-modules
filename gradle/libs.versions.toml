@@ -14,7 +14,7 @@ gson = "2.13.2"
 javalin = "6.7.0"
 
 jwt = "4.5.0"
-javalin-jwt = "0.7.0"
+javalin-jwt = "6.0.0"
 
 argon2 = "2.12"
 
